@@ -25,6 +25,6 @@ export default class CpfController {
 
   public findAll = async (req: Request, res: Response) => {
     const cpfs = await this.service.findAll();
-    return res.status(200).json();
+    return res.status(200).json(cpfs);
   }
 }
