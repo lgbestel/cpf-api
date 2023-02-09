@@ -23,7 +23,7 @@ export default class CpfModel {
   }
 
   public findAll = async () => {
-    const query = 'SELECT * FROM Cpf.cpfListoId;'
+    const query = 'SELECT * FROM Cpf.cpfList;'
     const [cpfs] = await connection.execute<RowDataPacket[]>(query);
     return cpfs;
   }
