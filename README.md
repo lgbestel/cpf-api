@@ -48,7 +48,7 @@ A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs
  ```
 <br>
 
-# Enpoints:
+# Endpoints:
 <br> 
 
 -----
