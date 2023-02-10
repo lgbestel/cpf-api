@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon --watch \"./**\" --ext \"ts,js\" --ignore \"./**/*.json\" --exec \"ts-node ./server.ts\"",
     "create:db": "ts-node utils/recreateDatabase.ts",
-    "test": "mocha -r ts-node/register ./tests/**.test.ts -t 10000 --exit"
+    "test": "mocha -r ts-node/register ./tests/**.test.ts -t 10000 --exit",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "keywords": [],
   "author": "",
