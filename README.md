@@ -7,7 +7,7 @@
 A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs com risco de fraude em uma lista restrita.
 <br><br>
 
-**Tecnologias utilizadas**
+**Tecnologias**
 
 - Projeto realizado com Docker, Node, MySQL, Typescript, Express;
 - Testes com mocha, chai e sinon;
