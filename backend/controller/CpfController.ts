@@ -6,20 +6,22 @@ export default class CpfController {
 
   public add = async (req: Request, res: Response) => {
     const { cpf } = req.body;
-    await this.service.add(+cpf);
-    return res.status(200).json();
+    const isAdded = await this.service.add(+cpf);
+    if (typeof isAdded === 'number') return res.status(201).json();
+    return res.status(409).json({ type: 'ExistsCpfException', message: 'CPF alerady exists'})
   }
 
   public findOne = async(req: Request, res: Response) => {
     const { cpf } = req.params;
-    const cpfMessage = await this.service.findOne(+cpf);
-    if (cpfMessage.type === 'SUCCESS') return res.status(201).json(cpfMessage.message);
-    return res.status(404).json(cpfMessage);
+    const isFound = await this.service.findOne(+cpf);
+    if (!isFound.type) return res.status(200).json(isFound);
+    return res.status(404).json(isFound);
   }
 
   public remove = async(req: Request, res: Response) => {
     const { cpf } = req.params;
-    const affectedRows = await this.service.remove(+cpf);
+    const isRemoved = await this.service.remove(+cpf);
+    if (typeof isRemoved !== 'number') return res.status(404).json(isRemoved);
     return res.status(200).json();
   }
 
