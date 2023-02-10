@@ -5,6 +5,7 @@
 **Overview**
 
 A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs com risco de fraude em uma lista restrita.
+<br><br>
 
 **Tecnologias utilizadas**
 
@@ -14,15 +15,38 @@ A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs
 - Arquitetura em camadas (model, service, controller e routes);
 - POO;
 - Utilização de princípios SOLID;
+<br><br>
 
 **Como rodar o projeto em sua máquina:**
 
- - Na raiz, rode em seu terminal o comando 'docker-compose up -d';
- - Rode o comando 'docker exec -it backend bash' para acessar o terminal do container Node recém criado;
- - No terminal do Node (container backend) rode o comando 'npm install' (para instalar as dependencias);
- - Rode o comando 'npm run create:db' (para criar e popular o banco de dados);
- - Rode o comando 'npm run dev' (para executar o server);
-<br><br> 
+ - Na raiz, rode em seu terminal o comando:
+ ```
+ docker-compose up -d
+ ```
+ - Para acessar o terminal do container Node recém criado rode o comando:
+ ```
+ docker exec -it backend bash
+ ```
+ ******A partir de agora, os comandos devem ser rodados no terminal do container backend**
+ <br>
+ - Para instalar as dependências, rode o comando:
+ ```
+ npm install
+ ```
+ - Para criar e popular o banco de dados, rode o comando:
+  ```
+ npm run create:d
+ ```
+ - Para executar o server, rode o comando:
+ ```
+ npm run dev
+ ```
+ - Para executar os testes, rode o comando:
+ ```
+ npm run test
+ ```
+<br>
+
 # Enpoints:
 <br> 
 
@@ -80,6 +104,7 @@ A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs
 ## Exceções
 -----
 <br>
+CPF inválido:
 
 ````
 {
@@ -88,12 +113,19 @@ A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs
 }
 ````
 
+CPF já existente na lista:
+
+````
 {
 	"type": "ExistsCpfException",
 	"message": "CPF alerady exists"
 }
+````
 
+CPF não encontrado:
+````
 {
 	"type": "NotFoundCpfException",
 	"message": "CPF not found"
 }
+````
