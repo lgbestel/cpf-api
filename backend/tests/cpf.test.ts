@@ -125,7 +125,7 @@ describe('**CPF TESTS**', () => {
 	describe('2. When the wrong input is sent', () => {
 		afterEach(sinon.restore);
 
-		it('a. Should return an exception message when the CPF sent has less than 11 chars', async () => {
+		it('a. Should return an exception message when the CPF sent dont have the correct lenght', async () => {
 			//arrange
 
 			//act
