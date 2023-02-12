@@ -36,7 +36,7 @@ A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs
  ```
  Para criar e popular o banco de dados, rode o comando:
   ```
- npm run create:d
+ npm run create:db
  ```
  Para executar o server, rode o comando:
  ```
