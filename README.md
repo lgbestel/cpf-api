@@ -10,6 +10,7 @@ A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs
 **Tecnologias**
 
 - Projeto realizado com Docker, Node, MySQL, Typescript, Express;
+- Git para versionamento;
 - Testes com mocha, chai e sinon;
 - RESTful API;
 - Arquitetura em camadas (model, service, controller e routes);
