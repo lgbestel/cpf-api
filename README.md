@@ -51,7 +51,7 @@ A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs
 
 # Endpoints:
 
-*Para executar manualmente as requisições, caso use o Thunder Client, importe a _thunder-collection_cpfApi.json_, localizada na raiz do projeto.
+*Para executar manualmente as requisições, caso use o Thunder Client, importe a _thunder-collection_cpfApi.json_, localizada na pasta backend.
 
 -----
 ## MÉTODO POST
