@@ -7,7 +7,7 @@
 A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs com risco de fraude em uma lista restrita.
 <br><br>
 
-**Tecnologias utilizadas**
+**Tecnologias**
 
 - Projeto realizado com Docker, Node, MySQL, Typescript, Express;
 - Testes com mocha, chai e sinon;
@@ -19,35 +19,36 @@ A CPF API foi criada com o intuito de poder adicionar, consultar, e excluir CPFs
 
 **Como rodar o projeto em sua máquina:**
 
- - Na raiz, rode em seu terminal o comando:
+ Na raiz, rode em seu terminal o comando:
  ```
  docker-compose up -d
  ```
- - Para acessar o terminal do container Node recém criado rode o comando:
+ Para acessar o terminal do container Node recém criado rode o comando:
  ```
  docker exec -it backend bash
  ```
  ******A partir de agora, os comandos devem ser rodados no terminal do container backend**
  <br>
- - Para instalar as dependências, rode o comando:
+ <br>
+ Para instalar as dependências, rode o comando:
  ```
  npm install
  ```
- - Para criar e popular o banco de dados, rode o comando:
+ Para criar e popular o banco de dados, rode o comando:
   ```
- npm run create:d
+ npm run create:db
  ```
- - Para executar o server, rode o comando:
+ Para executar o server, rode o comando:
  ```
  npm run dev
  ```
- - Para executar os testes, rode o comando:
+ Para executar os testes, rode o comando:
  ```
  npm run test
  ```
 <br>
 
-# Enpoints:
+# Endpoints:
 <br> 
 
 -----
