@@ -133,6 +133,7 @@ CPF não encontrado:
 }
 ````
 <br>
+
 **Code reviews, comentários e ideias de melhoria são sempre muito bem vindas!
 Agradeço sua visita e aguardo seu contato :D**
 <br>
