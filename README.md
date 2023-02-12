@@ -131,3 +131,14 @@ CPF não encontrado:
 	"message": "CPF not found"
 }
 ````
+<br>
+**Code reviews, comentários e ideias de melhoria são sempre muito bem vindas!
+Agradeço sua visita e aguardo seu contato :D**
+<br>
+<br>
+
+luizgbes@gmail.com
+
+<a href="https://www.linkedin.com/in/lgbestel">
+  <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
