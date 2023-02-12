@@ -1,5 +1,5 @@
 import * as express from 'express';
-import cpfRouter from './routes/CpfRoutes';
+import cpfRouter from './src/routes/CpfRoutes';
 
 const app = express();
 

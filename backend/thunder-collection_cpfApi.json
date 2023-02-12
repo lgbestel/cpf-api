@@ -1,0 +1,136 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "cpfApi",
+    "dateExported": "2023-02-12T12:45:49.105Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1e2f87aa-9982-4df3-8410-317f493a99a6",
+            "colId": "b8f041f4-d0bb-4589-84a2-1e6f148f3370",
+            "containerId": "",
+            "name": "Add CPF (correct)",
+            "url": "http://localhost:3098/cpf",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-09T20:31:44.624Z",
+            "modified": "2023-02-12T12:38:29.924Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cpf\": \"12345678901\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "52d05374-b216-4889-b096-fbd8ac52cc14",
+            "colId": "b8f041f4-d0bb-4589-84a2-1e6f148f3370",
+            "containerId": "",
+            "name": "Add invalid CPF (length)",
+            "url": "http://localhost:3098/cpf",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-12T12:36:33.118Z",
+            "modified": "2023-02-12T12:37:29.485Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cpf\": \"0123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a86fba53-974a-4412-9074-63807fc61136",
+            "colId": "b8f041f4-d0bb-4589-84a2-1e6f148f3370",
+            "containerId": "",
+            "name": "Add invalid CPF (repeated chars)",
+            "url": "http://localhost:3098/cpf",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-02-12T12:39:11.609Z",
+            "modified": "2023-02-12T12:39:46.487Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cpf\": \"99999999999\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "67d00ea6-28ca-48f1-b720-7da8355437f3",
+            "colId": "b8f041f4-d0bb-4589-84a2-1e6f148f3370",
+            "containerId": "",
+            "name": "Check a CPF (correct)",
+            "url": "http://localhost:3098/cpf/64852893055",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-02-12T12:40:10.091Z",
+            "modified": "2023-02-12T12:40:39.555Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "65a17e03-ec44-4fc4-9d88-0e5b966e4cd9",
+            "colId": "b8f041f4-d0bb-4589-84a2-1e6f148f3370",
+            "containerId": "",
+            "name": "Check a CPF (non existent)",
+            "url": "http://localhost:3098/cpf/12312312312",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-02-12T12:41:11.951Z",
+            "modified": "2023-02-12T12:41:31.106Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bcdf0266-6b1c-428d-9842-186f510813c7",
+            "colId": "b8f041f4-d0bb-4589-84a2-1e6f148f3370",
+            "containerId": "",
+            "name": "Remove a CPF (correct)",
+            "url": "http://localhost:3098/cpf/12345678901",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-02-12T12:42:57.869Z",
+            "modified": "2023-02-12T12:43:22.127Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ea791302-dc28-477e-b043-9e546c224245",
+            "colId": "b8f041f4-d0bb-4589-84a2-1e6f148f3370",
+            "containerId": "",
+            "name": "Remove a CPF (non existent)",
+            "url": "http://localhost:3098/cpf/12345671234",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-02-12T12:44:09.958Z",
+            "modified": "2023-02-12T12:44:33.311Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9a67d9a8-057d-4239-a1a7-f7631172d6cb",
+            "colId": "b8f041f4-d0bb-4589-84a2-1e6f148f3370",
+            "containerId": "",
+            "name": "Find All CPFs",
+            "url": "http://localhost:3098/cpf",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-02-12T12:44:58.038Z",
+            "modified": "2023-02-12T12:45:10.934Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -2,7 +2,7 @@ import * as sinon from 'sinon';
 import * as chai from 'chai';
 import chaiHttp = require('chai-http');
 import { Response } from 'superagent';
-import CpfModel from '../model/CpfModel';
+import CpfModel from '../src/model/CpfModel';
 import * as cpfMocks from './mocks/cpf.mocks';
 import { RowDataPacket } from 'mysql2';
 import app from '../app';
@@ -125,7 +125,7 @@ describe('**CPF TESTS**', () => {
 	describe('2. When the wrong input is sent', () => {
 		afterEach(sinon.restore);
 
-		it('a. Should return an exception message when the CPF sent dont have the correct lenght', async () => {
+		it('a. Should return an exception message when the CPF sent doesnt have the correct lenght', async () => {
 			//arrange
 
 			//act

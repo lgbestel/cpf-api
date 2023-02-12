@@ -20,14 +20,14 @@ export default async function recreateDatabase(conn: Pool) {
 		}
 	} catch (error) {
 		//caso ocorra algum erro, retorna
-		console.log('Banco Falha em restaurar o Banco', error);
+		console.log('Falha em criar/restaurar o Banco', error);
 	}
 }
 
 // cria a conexão, alterar a db, encerra a conexão
 if (require.main === module) {
 	recreateDatabase(connection).then(async () => {
-		// console.log('Banco Restaurado com sucesso');
+		console.log('Banco criado/restaurado com sucesso');
 		await connection.end();
 		process.exit(0);
 	});
